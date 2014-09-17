@@ -30,6 +30,10 @@
 			<label><%= Spree.t('spree_reviews.preview_size') %></label><br>
 			<%= text_field_tag('preferences[preview_size]', Spree::Reviews::Config[:preview_size], :size => 3) %>
 		</div>
+		<div class="field">
+			<label><%= Spree.t('spree_reviews.dh_after_product_properties') %></label><br>
+			<%= text_field_tag('preferences[dh_after_product_properties]', Spree::Reviews::Config[:dh_after_product_properties]) %>
+		</div>
 
 		<div class="form-buttons filter-actions actions" data-hook="buttons">
 			<%= button Spree.t('actions.update'), 'icon-refresh' %>

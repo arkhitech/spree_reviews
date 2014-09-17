@@ -23,4 +23,7 @@ class Spree::ReviewsConfiguration < Spree::Preferences::Configuration
 
   # render checkbox for a user to approve to show their identifier (name or email) on their review
   preference :render_show_identifier_checkbox, :boolean, :default => false
+
+  preference :dh_after_product_properties, :string, :default => 'product_properties'
+  
 end
